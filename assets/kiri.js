@@ -693,7 +693,7 @@ window.onload = function() {
     else
         show_pcb();
 
-    check_server_status();
+//    check_server_status();
 
     console.log("Update initial view");
     update_commits();
@@ -839,7 +839,7 @@ function check_server_status()
     img.src = "http://127.0.0.1:" + port + "/web/favicon.ico?" + Date.now();
     img.style.display = "none";
 
-    setTimeout(check_server_status, 5000);
+//    setTimeout(check_server_status, 5000);
 }
 
 function server_online() {
