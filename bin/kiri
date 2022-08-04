@@ -1983,8 +1983,9 @@ main()
 	if [[ ${ARCHIVE_PROJECT} == 1 ]]; then
 		archive_kiri_website
 	fi
-
-	launch_webserver
+	
+	python -mwebbrowser file://${OUTPUT_DIR_PATH}/web/index.html
+#	launch_webserver
 }
 
 main "${0}" "${@}"
